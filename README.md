@@ -10,7 +10,10 @@ Application web de gestion des frais du laboratoire GSB.
     b. Dans la section « Accès » de la barre latérale, cliquez sur Clés SSH et GPG.<br>
     c. Cliquez sur Nouvelle clé SSH ou Ajouter une clé SSH.<br>
     d. Dans le champ « Clé », collez votre clé publique.
-4. Retournez sur git et clonez le dépôt avec la commande ``git clone git@github.com:andre-rupied/AppliFrais.git``
+4. Retournez sur git et clonez le dépôt avec la commande ```txt
+git clone git@github.com:andre-rupied/AppliFrais.git
+```
+
 ## Installation de la db en local
 1. Importez la base de données en exécutant les scripts `sql` du dossier `ScriptsSQL`.
 2. Modifiez le mot de passe de l'utilisateur `sql` dans le fichier `ScriptsSQL/gsbfrais_bduser.sql`.
