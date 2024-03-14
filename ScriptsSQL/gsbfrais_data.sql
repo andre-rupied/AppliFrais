@@ -62,7 +62,8 @@ INSERT INTO `Visiteur` (`id`, `nom`, `prenom`, `login`, `mdp`, `adresse`, `cp`, 
 ('e52', 'Eynde', 'Valérie', 'veynde', 'i7sn3', '3 Grand Place', '13015', 'Marseille', '1999-11-01'),
 ('f21', 'Finck', 'Jacques', 'jfinck', '111001', '10 avenue du Prado', '13002', 'Marseille', '2001-11-10'),
 ('f39', 'Frémont', 'Fernande', 'ffremont', 'xs5tq', '4 route de la mer', '13012', 'Allauh', '1998-10-01'),
-('f4', 'Gest', 'Alain', 'agest', 'dywvt', '30 avenue de la mer', '13025', 'Berre', '1985-11-01');
+('g14', 'rupied', 'andre', 'arupied', 'mot de passe', '30 avenue de quelque part', '12345', 'en France', '2005-05-17'),
+('g15', 'couteller', 'nael', 'ncouteller', '123', 'rue de la rue', '141592', 'aboudabi', '2005-04-15');
 --
 -- Déchargement des données de la table `fichefrais`
 --
