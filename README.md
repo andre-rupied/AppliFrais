@@ -3,14 +3,16 @@
 Application web de gestion des frais du laboratoire GSB.
 
 ## Utilisation de git
-1. génerez une clé dans **git Basch** avec la commande `ssh-keygen -o`
-2. Afficher votre clé publique: `cat ~/.ssh/id_ed25519.pub`
-3. Ajouter cette clé dans github:<br>
+1.   Installer [Git](https://git-scm.com/download/linux) sur linux
+2.    Lancer __**git-bash**__
+3. génerez une clé dans **git Basch** avec la commande `ssh-keygen -o`
+4. Afficher votre clé publique: `cat ~/.ssh/id_ed25519.pub`
+5. Ajouter cette clé dans github:<br>
     a. Dans le coin supérieur droit d’une page, cliquez sur votre photo de profil, puis sur Paramètres.<br>
     b. Dans la section « Accès » de la barre latérale, cliquez sur Clés SSH et GPG.<br>
     c. Cliquez sur Nouvelle clé SSH ou Ajouter une clé SSH.<br>
     d. Dans le champ « Clé », collez votre clé publique.
-4. Retournez sur git et clonez le dépôt avec la commande 
+6. Retournez sur git et clonez le dépôt avec la commande 
 ```
 git clone git@github.com:andre-rupied/AppliFrais.git
 ```
