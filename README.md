@@ -5,10 +5,10 @@ Application web de gestion des frais du laboratoire GSB.
 ## clé ssh avec git
 1. génerez une clé dans **git Basch** avec la commande `ssh-keygen -o`
 2. Afficher votre clé publique: `cat ~/.ssh/id_ed25519.pub`
-3. Ajouter cette clé dans github:
-    a. Dans le coin supérieur droit d’une page, cliquez sur votre photo de profil, puis sur Paramètres.
-    b. Dans la section « Accès » de la barre latérale, cliquez sur Clés SSH et GPG.
-    c. Cliquez sur Nouvelle clé SSH ou Ajouter une clé SSH.
+3. Ajouter cette clé dans github:<br>
+    a. Dans le coin supérieur droit d’une page, cliquez sur votre photo de profil, puis sur Paramètres.<br>
+    b. Dans la section « Accès » de la barre latérale, cliquez sur Clés SSH et GPG.<br>
+    c. Cliquez sur Nouvelle clé SSH ou Ajouter une clé SSH.<br>
     d. Dans le champ « Clé », collez votre clé publique.
 
 ## Installation en local
