@@ -11,10 +11,13 @@ Application web de gestion des frais du laboratoire GSB.
     c. Cliquez sur Nouvelle clé SSH ou Ajouter une clé SSH.<br>
     d. Dans le champ « Clé », collez votre clé publique.
 
-## Installation en local
+## Installation de la db en local
 1. Importez la base de données en exécutant les scripts `sql` du dossier `ScriptsSQL`.
 2. Modifiez le mot de passe de l'utilisateur `sql` dans le fichier `ScriptsSQL/gsbfrais_bduser.sql`.
-3. Modifiez le mot de passe de l'utilisateur `sql` dans le fichier `config.php`.
+3. Modifiez le mot de passe de l'utilisateur `sql` dans le fichier `config.php` <br>ligne **6** a modifier : 
+```sql
+    'password' => 'secret', // Changez le mot de passe en production
+```
 4. Servez le dossier `www` à l'aide d'un serveur web (apache, nginx, etc.).
 
 ## Mise en production
