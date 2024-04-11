@@ -44,6 +44,18 @@ class PdoGsb {
   	    $ligne = $cmd->fetch();
   	    return $ligne;
     } 
+
+
+    public function getInfosVisiteurHash($login){
+      $req = "select mdp from Visiteur where login = ?";
+      $cmd = $this->monPdo->prepare($req);
+      $cmd->bindValue(1, $login);
+      $cmd->execute();
+      $ligne = $cmd->fetch();
+      return $ligne;
+  } 
+
+
   /**
    * Retourne sous forme d'un tableau associatif toutes les lignes de frais hors forfait
    * concernées par les deux arguments   
