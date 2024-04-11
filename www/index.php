@@ -31,11 +31,11 @@ foreach ($result as $visiteur) {
       $sql = "UPDATE Visiteur SET mdp='$hash_mdp' WHERE id='" . $visiteur['id'] . "'";
       $stmt = $pdoo->prepare($sql);
       $stmt->execute();
-      echo $stmt->rowCount() . " records UPDATED successfully";
+      //echo $stmt->rowCount() . " records UPDATED successfully";
     } catch (PDOException $e) {
       echo $sql . "<br>" . $e->getMessage();
     }
-    echo $visiteur['mdp'] . "<br>" . PHP_EOL;
+    //echo $visiteur['mdp'] . "<br>" . PHP_EOL;
   }
   
 }
