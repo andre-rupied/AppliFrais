@@ -12,8 +12,7 @@ switch($action){
 		$mdp = lireDonneePost('mdp');
 		$hash_mdp = password_hash($mdp,  PASSWORD_ARGON2I);
 		$visiteur = $pdo->getInfosVisiteur($login,$hash_mdp);
-		echo(password_verify($mdp ,$hash_mdp));
-		if(!is_array( $visiteur)){
+		if(!password_verify($mdp ,$hash_mdp)){
 			ajouterErreur("Login ou mot de passe incorrect", $tabErreurs);
 		  include("vues/v_debutContenu.php");
 			include("vues/v_erreurs.php");
